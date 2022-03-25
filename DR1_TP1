@@ -1,0 +1,138 @@
+Questão1
+#Algoritmo em Python para calculo da área do círculo
+
+
+print('Calculo da area do circulo: ')
+
+raio = float(input('Informe o raio do circulo: '))
+
+area = (raio**2)*3.14159265358979323846
+
+print('O valor da área da círculo é: ', area)
+
+
+Questão2
+#Algoritmo Troca de valor
+print('Troca de valor das variáveis digitadas!')
+
+v1 = float(input('Informe o valor da primeira variável! '))
+
+v2 = float (input('Informe o valor da segunda variável! '))
+
+print(' A primeira variável é', v1, ' e a segunda é', v2)
+
+print('Agora com a troca dos valores das variáveis: ')
+
+aux = v2
+
+v2 = v1
+
+v1 = aux
+
+print('Temos agora, a primeira', v1,' e a segunda', v2)
+
+
+Questão3
+#Calculo da área da Esfera
+print('Calculo da área da Esfera: ')
+
+raio = float(input('Informe o valor do raio da Esfera: '))
+
+area = 4*(raio**2)*3.14159265358979323846
+
+print('A area da Esfera é:', area)
+
+
+Questão4
+#Calculo da área do quadrado
+
+print('Calculo da área do quadrado')
+
+lado = float(input('Informe o lado do quadrado: '))
+
+area = (lado**2)
+
+print('A area do quadrado é: ', area)
+
+
+Questão5
+#Calculo da area do retangulo
+
+print('Calculo da area do Retangulo')
+
+base = float(input('Informe o valor da base do Retangulo: '))
+
+altura = float(input('Informe o valor da altura do Retangulo: '))
+
+area = base*altura
+
+print('A area d Retangulo é: ', area)
+
+
+Questão6
+#Calculo da gorjeta a ser paga
+print('Calculo da gorjeta a ser paga:')
+
+conta = float(input('Informe o valor da conta: '))
+
+gorjeta = conta*0.1
+
+total = conta + gorjeta
+
+print('O valor a ser pago da gorjeta é: ', gorjeta)
+
+print('O valor total da conta é de: ', total)
+
+
+Questão7
+#Calculo do reajuste salarial
+print('='*50)
+print('Calculo do reajuste salarial: ')
+
+salario = float(input('Informe o valor do salário atual: '))
+
+reajuste = float(input('Informe o valor do reajuste a ser dado: '))
+
+salarionovo = salario*(1 + reajuste/100)
+
+print('O novo salário é de: ', salarionovo)
+
+Questão8
+#Calculo do volume da caixa de água cilíndrica
+
+print('Calculo do volume da caixa de água cilíndrica: ')
+
+raio = float(input('Informe o valor do raio da base do cilindro: '))
+
+altura= float(input('Informe o valor da altura do cilindro: '))
+
+volume = (raio**2)*altura*3.14159265358979323846
+
+print('O volume cilíndrico da caixa de água é: ', volume)
+
+
+Questão9
+#Calculo media ponderada
+print('Calculo da média poderada!')
+
+n1 = float(input('Informe a primeira nota! '))
+
+n2 = float(input('Informe a segunda nota com peso 2! '))
+
+media = (n1*1 + n2*2)/3
+
+print('A media ponderada é de: ', media)
+
+
+Questão10
+#Calculo media
+
+print('Calculo da média de duas notas')
+
+n1 = float(input('Informe a nota n1: '))
+
+n2 = float(input('Informe a nota n2: '))
+
+media = (n1+n2)/2
+
+print ('A média é: ', media)
