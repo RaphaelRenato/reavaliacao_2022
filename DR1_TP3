@@ -1,0 +1,284 @@
+Questão1
+#Contando Vogais
+qtde = int(input("Informe quantidade de caracteres:"))
+cont=0
+
+for i in range(qtde):
+  car= str(input('Entre con o caracter desejado!\n'))
+  if(car =='a') or (car =='A'):
+    print('Vogal')
+    cont +=1
+  elif(car == "e") or (car=='E'):
+    print('Vogal')
+    cont +=1
+  elif (car == 'i') or(car=='I'):
+    print('Vogal')
+    cont +=1
+  elif (car == 'o') or (car=='O'):
+    print('Vogal')
+    cont +=1
+  elif (car == 'u') or (car == 'U'):
+    print('Vogal')
+    cont +=1
+  else:
+    print('Consoante')
+
+print(f'O total de vogais é {cont}! ')
+
+Questão2
+#Limite inferior e superior checa primo
+def verifica_primo(numero):
+    primo = True
+    for i in range(2, numero):
+        if((numero % i)==0):
+            primo = False
+            break
+    return primo
+cont = 0
+liminf = int(input('Informe o limite inferior: '))
+limsup = int(input('Informe o limite superior: '))
+
+for numero in range(liminf, limsup+1):
+    if(verifica_primo(numero)):
+        print('Numero primo', numero)
+        cont +=1
+print(f'O total de primos é {cont}')
+
+
+Questão3
+#Menu de opções em python'
+print('Menu de opções! ')
+option =0
+
+while option !=5:
+    option = int(input('''Escolha a operação desejada:
+    1 - Soma
+    2 - Subtração
+    3 - Multiplicação
+    4 - Divisão
+    5 - Sair\n'''))
+
+    if option == 1:
+        num1 = float(input('Informe o primeiro valor! '))
+        num2 = float(input('Informe o segundo valor! '))
+        soma =num1+num2
+        print('O resultado da soma é: ', soma)
+    elif option == 2:
+        num1 = float(input('Informe o primeiro valor! '))
+        num2 = float(input('Informe o segundo valor! '))
+        subtracao = num1 - num2
+        print('O resultado da subtração é: ', subtracao)
+    elif option == 3:
+        num1 = float(input('Informe o primeiro valor! '))
+        num2= float(input('Informe o segundo valor! '))
+        multiplicacao = num1*num2
+        print('O resultado da multiplicação é: ', multiplicacao)
+    elif option == 4:
+        num1 = float(input('Informe o primeiro número! '))
+        num2 = float(input('Informe o segundo valor! '))
+        divisao = num1/num2
+        print('O resutado da divisão é de:', divisao)
+    elif option == 5:
+        print('Saindo do programa!\n')   
+    else:
+        print('Opção inválida!\n')
+
+print('Fim do programa!')
+
+
+Questão4
+#Número primo
+num = int(input('Informe um número para saber se é primo ou não: '))
+multiplo =0
+
+for i in range(2, num):
+    if (num % i == 0):
+        print('É múltiplo de: ', i)
+        multiplo+=1
+
+if (multiplo == 0):
+    print('É primo')
+else:
+    print('Existe', multiplo,' múltiplos acima de2 e abaixo de', num)
+    
+    
+Questão5
+#Progressão Aritmética
+n = int(input('Informe a quantidade de termos da progressão aritmética: '))
+num1 = int(input('Informe o primeiro número inteiro: '))
+num2 = int(input('Informe o segundo número inteiro: '))
+an = 0 
+cont = 0
+
+while (cont<=n):
+    
+    r = num2 - num1
+
+    an = an + r
+
+    cont+=1
+    
+    print('an', an) 
+
+
+Questão6
+#Sequencia de N números de visão resto 1
+
+print('Informe a quantidade de números desejados! ')
+soma=0
+maior = 0
+menor = 0
+
+qtde = int(input('Entre com a quantidade de números desejados! '))
+
+for in range (qtde):
+    num = int(input('Informe o número inteiro! '))
+    soma = soma + num
+    media= soma / qtde
+    
+
+Questão7
+#Sequencia de N números inteiros
+print('Programa da soma, média, maior e menor de N números: ')
+soma = 0
+maior = 0
+menor = 0
+
+qtde = int(input('Informe a quantidade de números desejada! '))
+
+for i in range(qtde):
+    num = int(input('Informe o número: '))
+
+    soma = soma + num
+    media = soma/qtde
+
+    if num > maior:
+        maior = num
+    else:
+        menor = num
+
+print('A soma é:', soma)
+print('A média: ', media)
+print('O maior número é: ', maior)
+print('O menor número é: ', menor)
+
+
+Questão8
+#Sequencia Fibonacci
+print('A sequencia de Fibonacci de dez números')
+
+num1 = 0
+num2 = 1
+cont = 0
+
+n = int(input('Informe a quantidade de termos da sequencia de Fibonacci !'))
+
+while (cont<n):
+
+    num3 = num1 + num2
+    
+    num1 = num2
+    num2 = num3
+
+    cont += 1
+    print('prox', num3)
+
+
+Questão9
+#Sequencia numeros
+num = int(input('Informe um número para análise! '))
+ 
+while num!=0:
+    primo = True
+    for i in range(2, num):
+        if num % i ==0:
+            primo = False
+            break
+    if primo == False:
+        print(f'O numero {num} não é primo! ' )
+    else:
+        print(f'O número {num} é primo! ')
+    num = int(input('Informe um número para ser analisado. Caso queira sair digite zero!'))
+print(6*'==================================!')  
+
+
+Questão10
+#Soma de vinte números inteiros!
+print('Soma dos vinte números inteiros! ')
+soma =0
+maior = 0
+menor = 0
+for i in range (5):
+    num = int(input('Informe os 20 números! '))
+    soma = soma + num
+    media = soma/5
+    if num > maior:
+        maior = num
+    else:
+        menor = num
+
+print('A média é: ', media)
+print('O maior é: ', maior)
+print('O menor é :', menor)
+print('A soma é de: ', soma)
+
+
+Questão11
+#Soma de 1  100
+print('Soma dos números de 1 a 100!')
+soma = 0
+for i in range(101):
+    soma += i
+ 
+print(soma)
+
+
+Questão12
+#Soma de 1  100
+print('Soma dos números de 1 a 100!')
+soma = 0
+for i in range(101):
+    soma += i
+ 
+print(soma)
+
+
+Questão13
+#Tabuada de um número começando pelo 1 até o 10 !
+num = int(input('Digite um número inteiro para saber a tabuada!'))
+
+cont =1
+
+for i in range(10):
+    resul = cont*num
+    cont += 1
+    print('A tabuada de 1 a dez é: ', resul)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
